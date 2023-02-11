@@ -19,13 +19,13 @@ public partial class MapEventManager
 
     private void WindowsView_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
     {
-        System.Diagnostics.Debug.WriteLine($"ManipulationDelta: {e.Position.Y}");
+        System.Diagnostics.Debug.WriteLine($"ManipulationDelta.Y: {e.Position.Y}");
     }
 
     private void WindowsView_ManipulationStarted(object sender, ManipulationStartedRoutedEventArgs e)
     {
         var windowsView = sender as UIElement;
-        System.Diagnostics.Debug.WriteLine($"ManipulationStarted: {e.Position.Y}");
+        System.Diagnostics.Debug.WriteLine($"ManipulationStarted.Y: {e.Position.Y}");
     }
 
     partial void UnsubscribeNativeTouchEvents(IElementHandler handler)
